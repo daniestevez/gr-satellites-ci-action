@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 RUN apt-get update \
     && DEBIAN_FRONTEND="noninteractive" apt-get install -y software-properties-common \
-    && add-apt-repository ppa:gnuradio/gnuradio-releases \
+    && add-apt-repository ppa:gnuradio/gnuradio-releases-3.9 \
     && apt-get update \
     && DEBIAN_FRONTEND="noninteractive" apt-get -y upgrade \
     && DEBIAN_FRONTEND="noninteractive" apt-get install -y \

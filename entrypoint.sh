@@ -7,3 +7,4 @@ cd build
 cmake ..
 make -j$(nproc)
 ctest -V
+make install
